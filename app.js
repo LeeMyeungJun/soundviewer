@@ -53,23 +53,15 @@ document.querySelectorAll(".filter").forEach((button) => {
   });
 });
 
-function timeLabel(seconds) {
-  if (!Number.isFinite(seconds)) return "0:00";
-  return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
-}
-
 function updatePlayback() {
   const playing = !player.paused && !player.ended;
   $("play").replaceChildren();
   const icon = document.createElement("span");
   icon.setAttribute("aria-hidden", "true");
   icon.textContent = playing ? "Ⅱ" : "▶";
-  $("play").append(icon, playing ? " 일시정지" : " 소리 듣기");
-  $("stop").disabled = player.paused && player.currentTime === 0;
-  const duration = Number.isFinite(player.duration) ? player.duration : selected?.duration || 0;
-  $("play-time").textContent = `${timeLabel(player.currentTime)} / ${timeLabel(duration)}`;
-  $("seek").disabled = !Number.isFinite(player.duration) || player.duration <= 0;
-  $("seek").value = duration > 0 ? player.currentTime / duration * 100 : 0;
+  $("play").append(icon, " 듣기");
+  $("play").setAttribute("aria-pressed", String(playing));
+  $("play").setAttribute("aria-label", playing ? "소리 일시정지" : "소리 듣기");
 }
 
 function openItem(item, button) {
@@ -78,11 +70,9 @@ function openItem(item, button) {
   $("viewer-image").src = item.image;
   $("viewer-image").alt = item.name + " 그림";
   $("viewer-title").textContent = item.name;
-  $("viewer-english").textContent = item.english;
-  $("viewer-category").textContent = item.category === "동물" ? "동물 친구들" : "부릉부릉 탈것";
-  $("viewer-caption").textContent = item.caption;
   player.src = item.audio;
-  player.loop = $("repeat").checked;
+  player.loop = $("repeat").getAttribute("aria-pressed") === "true";
+  $("play-status").classList.add("sr-only");
   $("play-status").textContent = "재생 버튼을 눌러 소리를 들어 보세요.";
   updatePlayback();
   viewer.showModal();
@@ -100,6 +90,7 @@ viewer.addEventListener("close", () => {
   openingButton?.focus();
 });
 $("play").addEventListener("click", () => {
+  $("play-status").classList.add("sr-only");
   if (!player.paused) {
     player.pause();
     $("play-status").textContent = "잠시 멈췄어요.";
@@ -108,25 +99,24 @@ $("play").addEventListener("click", () => {
   $("play-status").textContent = "소리를 준비하고 있어요…";
   // Call play directly in the tap handler to preserve Safari's user gesture.
   player.play().catch(() => {
-    if (viewer.open && player.error) $("play-status").textContent = "소리를 불러오지 못했어요. 인터넷 연결 후 다시 시도해 주세요.";
-    else if (viewer.open && player.paused) $("play-status").textContent = "재생 버튼을 다시 눌러 주세요.";
+    if (!viewer.open) return;
+    if (player.error) $("play-status").textContent = "소리를 불러오지 못했어요. 인터넷 연결 후 다시 시도해 주세요.";
+    else if (player.paused) $("play-status").textContent = "재생 버튼을 다시 눌러 주세요.";
+    $("play-status").classList.remove("sr-only");
   });
 });
-$("stop").addEventListener("click", () => {
-  player.pause();
-  player.currentTime = 0;
-  $("play-status").textContent = "재생을 멈췄어요.";
-  updatePlayback();
+$("repeat").addEventListener("click", () => {
+  player.loop = !player.loop;
+  $("repeat").setAttribute("aria-pressed", String(player.loop));
 });
-$("repeat").addEventListener("change", () => { player.loop = $("repeat").checked; });
-$("seek").addEventListener("input", () => {
-  if (Number.isFinite(player.duration)) player.currentTime = $("seek").value / 100 * player.duration;
-});
-for (const event of ["play", "pause", "timeupdate", "loadedmetadata", "ended", "emptied"]) player.addEventListener(event, updatePlayback);
+for (const event of ["play", "pause", "ended", "emptied"]) player.addEventListener(event, updatePlayback);
 player.addEventListener("playing", () => { $("play-status").textContent = `${selected.name} 소리를 듣고 있어요.`; });
 player.addEventListener("ended", () => { $("play-status").textContent = "한 번 더 들어 볼까요?"; });
 player.addEventListener("error", () => {
-  if (viewer.open) $("play-status").textContent = "소리를 불러오지 못했어요. 인터넷 연결 후 다시 시도해 주세요.";
+  if (viewer.open) {
+    $("play-status").textContent = "소리를 불러오지 못했어요. 인터넷 연결 후 다시 시도해 주세요.";
+    $("play-status").classList.remove("sr-only");
+  }
 });
 document.addEventListener("visibilitychange", () => {
   if (document.hidden) player.pause();

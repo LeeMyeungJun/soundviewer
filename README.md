@@ -4,6 +4,8 @@ A static, touch-friendly image and sound viewer for iPhone, iPad, Android, and d
 
 The library contains 20 items: 10 animals (dog, cat, cow, horse, sheep, pig, duck, rooster, lion, elephant) and 10 vehicles (car, fire engine, airplane, train, ambulance, police car, motorcycle, helicopter, bus, ship).
 
+The selected picture opens in a viewport-sized viewer with the full image visible. Only two compact playback buttons appear underneath: Listen (tap again to pause) and Repeat (highlighted when enabled). Close is at the upper right; Escape also closes the viewer.
+
 ## Run locally
 
 From this directory:
