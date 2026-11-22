@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f8fc">
+  <meta name="description" content="동물과 탈것의 그림을 크게 보고 소리를 들어 보세요. 처음 저장한 뒤에는 오프라인에서도 사용할 수 있어요.">
+  <title>소리 정원 · Sound Garden</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="catalog.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="소리 정원 홈"><img src="assets/icon.svg" alt="" width="36" height="36"><span>소리 정원<small>SOUND GARDEN</small></span></a>
+    <span class="header-note">작은 발견, 즐거운 소리</span>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="heading">
+      <div><p class="eyebrow">LOOK, LISTEN & DISCOVER</p><h1 id="heading">눈으로 보고,<br>소리로 만나요<span>.</span></h1><p class="intro-copy">어떤 소리가 들릴까요?<br>마음에 드는 친구를 골라 보세요.</p></div>
+      <div class="intro-art" aria-hidden="true"><span class="music-note">♪</span><img src="assets/images/dog.png" alt=""><span class="art-caption">오늘은 어떤 친구를 만날까요?</span></div>
+    </section>
+    <section class="library" aria-labelledby="library-title">
+      <div class="library-heading"><h2 id="library-title">소리 둘러보기 <span id="item-count">8</span></h2><span class="tap-hint">그림을 누르면 크게 볼 수 있어요</span></div>
+      <div class="filters" role="group" aria-label="소리 분류">
+        <button class="filter active" data-category="전체" aria-pressed="true">전체</button>
+        <button class="filter" data-category="동물" aria-pressed="false">동물 친구들</button>
+        <button class="filter" data-category="탈것" aria-pressed="false">부릉부릉 탈것</button>
+      </div>
+      <div id="cards" class="cards"></div>
+    </section>
+    <aside class="cache-panel" aria-label="오프라인 저장 상태">
+      <div class="cache-icon" aria-hidden="true">↓</div><div class="cache-copy"><strong id="cache-title">오프라인 사용 준비 중</strong><p id="cache-detail" role="status">처음 방문하면 모든 그림과 소리를 기기에 저장해요.</p><progress id="cache-progress" max="1" value="0" aria-label="전체 파일 저장 진행률"></progress></div><button id="cache-retry" class="quiet-button" hidden>다시 저장</button>
+    </aside>
+  </main>
+  <footer><span>보고 듣는 즐거움, 소리 정원</span><a href="credits.html">소리 출처 및 이용 안내</a></footer>
+  <dialog id="viewer" aria-labelledby="viewer-title">
+    <div class="viewer-top"><span id="viewer-category"></span><button id="close-viewer" class="close-button" aria-label="큰 그림 닫기">✕</button></div>
+    <img id="viewer-image" class="viewer-image" alt="">
+    <div class="viewer-content"><p id="viewer-english" class="eyebrow"></p><h2 id="viewer-title"></h2><p id="viewer-caption"></p>
+      <audio id="player" preload="none" playsinline></audio>
+      <div class="playback"><button id="play" class="play-button"><span aria-hidden="true">▶</span> 소리 듣기</button><button id="stop" class="stop-button" disabled>정지</button></div>
+      <div class="timeline"><label for="seek" class="sr-only">재생 위치</label><input id="seek" type="range" min="0" max="100" value="0" step="0.1" disabled><span id="play-time">0:00 / 0:00</span></div>
+      <label class="repeat-control"><input id="repeat" type="checkbox"> 반복해서 듣기</label>
+      <p id="play-status" class="play-status" role="status">재생 버튼을 눌러 소리를 들어 보세요.</p>
+    </div>
+  </dialog>
+  <noscript><p>소리 정원을 사용하려면 브라우저의 JavaScript를 켜 주세요.</p></noscript>
+</body>
+</html>
