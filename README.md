@@ -18,6 +18,8 @@ Upload the project files to the intended GitHub repository, preserving the `asse
 
 Repository: https://github.com/LeeMyeungJun/soundviewer. This checkout is linked to that repository on the `main` branch.
 
+Viewer address: https://leemyeungjun.github.io/soundviewer/ (GitHub Pages publishes the root of `main`).
+
 ## Offline behavior
 
 On the first visit, the viewer automatically stores the page, scripts, illustrations, and MP3 recordings. Keep it open until the offline-ready message appears. Later visits and playback use Cache Storage without downloading those files again. Interrupted downloads can be retried; already stored files are retained. The credits page is also available offline.
