@@ -1,7 +1,7 @@
 importScripts("./catalog.js");
 
 // Bump this version whenever application files, catalog, or media change.
-const VERSION = "v1";
+const VERSION = "v2";
 const PREFIX = `soundviewer:${self.registration.scope}:`;
 const CACHE = PREFIX + VERSION;
 const SHELL = ["./", "index.html", "styles.css", "app.js", "catalog.js", "credits.html", "credits.js", "assets/icon.svg"];

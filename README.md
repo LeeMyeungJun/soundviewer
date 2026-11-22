@@ -2,6 +2,8 @@
 
 A static, touch-friendly image and sound viewer for iPhone, iPad, Android, and desktop browsers. Select a card to see a larger generated illustration, then tap Play to hear its downloaded recording. No build step, account, or application server is required.
 
+The library contains 20 items: 10 animals (dog, cat, cow, horse, sheep, pig, duck, rooster, lion, elephant) and 10 vehicles (car, fire engine, airplane, train, ambulance, police car, motorcycle, helicopter, bus, ship).
+
 ## Run locally
 
 From this directory:

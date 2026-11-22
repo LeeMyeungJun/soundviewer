@@ -117,8 +117,8 @@ test('old scoped caches survive incomplete downloads; unrelated caches are retai
 test('every real catalog item includes existing media and complete sound attribution', () => {
   const context = {};
   vm.runInNewContext(readFileSync(path.join(root, 'catalog.js'), 'utf8'), context);
-  assert.equal(context.SOUND_CATALOG.length, 8);
-  assert.equal(new Set(context.SOUND_CATALOG.map((item) => item.id)).size, 8);
+  assert.equal(context.SOUND_CATALOG.length, 20);
+  assert.equal(new Set(context.SOUND_CATALOG.map((item) => item.id)).size, 20);
   for (const item of context.SOUND_CATALOG) {
     assert.ok(existsSync(path.join(root, item.image)), item.image);
     assert.ok(existsSync(path.join(root, item.audio)), item.audio);

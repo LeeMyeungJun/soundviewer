@@ -16,11 +16,23 @@ RECORDINGS = [
     ("dog", "강아지", "Dog", "동물", "멍멍! 반가워요.", "https://freesound.org/people/vdr3/sounds/393694/"),
     ("cat", "고양이", "Cat", "동물", "야옹, 내 목소리를 들어 봐요.", "https://freesound.org/people/tuberatanka/sounds/110011/"),
     ("cow", "소", "Cow", "동물", "음메~ 농장의 친구예요.", "https://freesound.org/people/JarredGibb/sounds/233129/"),
+    ("horse", "말", "Horse", "동물", "히이잉! 힘차게 달리는 친구예요.", "https://freesound.org/people/Salsero_classic/sounds/826753/"),
+    ("sheep", "양", "Sheep", "동물", "메에~ 포근한 털을 가진 친구예요.", "https://freesound.org/people/TheKingOfGeeks360/sounds/840891/"),
+    ("pig", "돼지", "Pig", "동물", "꿀꿀, 농장에서 인사해요.", "https://freesound.org/people/odilonmarcenaro/sounds/121949/"),
+    ("duck", "오리", "Duck", "동물", "꽥꽥! 물가의 친구를 만나 봐요.", "https://freesound.org/people/gibarroule/sounds/365133/"),
+    ("rooster", "수탉", "Rooster", "동물", "꼬끼오! 아침을 알려요.", "https://freesound.org/people/InspectorJ/sounds/384188/"),
+    ("lion", "사자", "Lion", "동물", "어흥! 사자의 울음소리를 들어 봐요.", "https://freesound.org/people/Bidone/sounds/69572/"),
+    ("elephant", "코끼리", "Elephant", "동물", "뿌우! 긴 코를 가진 커다란 친구예요.", "https://freesound.org/people/ikbenraar/sounds/819668/"),
     ("car", "자동차", "Car", "탈것", "부릉부릉, 출발해요.", "https://freesound.org/people/jackthemurray/sounds/433584/"),
     ("fire-engine", "소방차", "Fire engine", "탈것", "불을 끄러 출동해요.", "https://freesound.org/people/Breviceps/sounds/465700/"),
     ("airplane", "비행기", "Airplane", "탈것", "슈우웅! 하늘을 날아요.", "https://freesound.org/people/InspectorJ/sounds/428086/"),
     ("train", "기차", "Train", "탈것", "기차의 힘찬 경적을 들어 봐요.", "https://freesound.org/people/sgo.75/sounds/845065/"),
     ("ambulance", "구급차", "Ambulance", "탈것", "도움이 필요한 곳으로 출동해요.", "https://freesound.org/people/LanDub/sounds/184623/"),
+    ("police-car", "경찰차", "Police car", "탈것", "사이렌을 울리며 출동해요.", "https://freesound.org/people/conleec/sounds/159753/"),
+    ("motorcycle", "오토바이", "Motorcycle", "탈것", "부릉! 두 바퀴로 달려요.", "https://freesound.org/people/spenceomatic/sounds/119774/"),
+    ("helicopter", "헬리콥터", "Helicopter", "탈것", "두두두두, 프로펠러를 돌리며 날아요.", "https://freesound.org/people/qubodup/sounds/187678/"),
+    ("bus", "버스", "Bus", "탈것", "많은 사람을 태우고 달려요.", "https://freesound.org/people/bikesnbassboi/sounds/540398/"),
+    ("ship", "배", "Ship", "탈것", "뿌우~ 바다 위에서 뱃고동이 울려요.", "https://freesound.org/people/coalcon/sounds/636075/"),
 ]
 
 
