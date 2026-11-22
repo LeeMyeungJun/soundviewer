@@ -14,7 +14,7 @@ function worker() {
   let offline = false;
   const scope = 'https://example.test/soundviewer/';
   const fetch = async (input) => {
-    const url = String(input);
+    const url = typeof input === 'string' ? input : input.url;
     network.push(url);
     if (offline || url.endsWith(fail || '__never__')) throw new Error('offline');
     return new Response(Uint8Array.from([0,1,2,3,4,5,6,7,8,9]), { headers: { 'Content-Type': url.endsWith('.mp3') ? 'audio/mpeg' : 'text/plain' } });
@@ -26,7 +26,7 @@ function worker() {
       return {
         async match(url) { return entries.get(String(url))?.clone(); },
         async put(url, response) { entries.set(String(url), response.clone()); },
-        async addAll(urls) { for (const url of urls) entries.set(url, await fetch(url)); },
+        async addAll(requests) { for (const request of requests) entries.set(typeof request === 'string' ? request : request.url, await fetch(request)); },
       };
     },
     async keys() { return [...storage.keys()]; },
@@ -39,7 +39,7 @@ function worker() {
     skipWaiting: async () => {},
     clients: { claim: async () => {}, matchAll: async () => [{ postMessage: (value) => messages.push(value) }] },
   };
-  vm.runInNewContext(readFileSync(path.join(root, 'sw.js'), 'utf8'), { self, caches, fetch, URL, Headers, Response, importScripts() {} });
+  vm.runInNewContext(readFileSync(path.join(root, 'sw.js'), 'utf8'), { self, caches, fetch, URL, Headers, Request, Response, importScripts() {} });
   async function dispatch(type, props = {}) {
     let result;
     listeners[type]({ ...props, waitUntil: (promise) => { result = promise; }, respondWith: (promise) => { result = promise; } });

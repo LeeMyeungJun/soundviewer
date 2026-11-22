@@ -7,7 +7,12 @@ globalThis.SOUND_CATALOG = [
     "caption": "멍멍! 반가워요.",
     "image": "assets/images/dog.png",
     "audio": "assets/audio/dog.mp3",
-    "duration": 14.9,
+    "duration": 15.0,
+    "loudness": {
+      "integratedLufs": -20.2,
+      "truePeakDbtp": -6.6,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Dog Barking",
       "author": "vdr3",
@@ -15,7 +20,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/393/393694_4994127-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "53ffe7cae839076721820fe909bf11cee3fe6ffeeac05e50aa9b9e9aa484bd04"
     }
   },
@@ -28,6 +33,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/cat.png",
     "audio": "assets/audio/cat.mp3",
     "duration": 1.5,
+    "loudness": {
+      "integratedLufs": -20.4,
+      "truePeakDbtp": -13.3,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "cat meow",
       "author": "tuberatanka",
@@ -35,7 +45,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/110/110011_1537422-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "2890268279c76f06dc0b7c2b59313becf63a152a1addcede5ee5161cee9eb45a"
     }
   },
@@ -48,6 +58,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/cow.png",
     "audio": "assets/audio/cow.mp3",
     "duration": 2.2,
+    "loudness": {
+      "integratedLufs": -20.4,
+      "truePeakDbtp": -12.3,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Cow - Moo 2 - 96kHz.wav",
       "author": "JarredGibb",
@@ -55,7 +70,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/233/233129_4056007-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "e07d41f040d1895db68594aa4182aebdaf933f2ec47365af79fa153f30d3d6ea"
     }
   },
@@ -68,6 +83,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/horse.png",
     "audio": "assets/audio/horse.mp3",
     "duration": 2.1,
+    "loudness": {
+      "integratedLufs": -20.4,
+      "truePeakDbtp": -9.3,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Renill de cavall / Horse Neigh",
       "author": "Salsero_classic",
@@ -75,7 +95,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/826/826753_3339822-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "e788ddfbff5820bdc116950585d3f36784d772007f6eb921618ccf95b8143b3c"
     }
   },
@@ -88,6 +108,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/sheep.png",
     "audio": "assets/audio/sheep.mp3",
     "duration": 1.2,
+    "loudness": {
+      "integratedLufs": -20.4,
+      "truePeakDbtp": -5.8,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Sheep - Bleat; Medium Perspective",
       "author": "TheKingOfGeeks360",
@@ -95,7 +120,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/840/840891_15895934-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "4571065db562ae165487c833b331aec88bbe172139650ef25a997705e5ee6476"
     }
   },
@@ -107,16 +132,21 @@ globalThis.SOUND_CATALOG = [
     "caption": "꿀꿀, 농장에서 인사해요.",
     "image": "assets/images/pig.png",
     "audio": "assets/audio/pig.mp3",
-    "duration": 15.0,
+    "duration": 1.0,
+    "loudness": {
+      "integratedLufs": -20.5,
+      "truePeakDbtp": -4.3,
+      "sourceChannel": 1
+    },
     "credit": {
-      "title": "pig grunting and foraging.wav",
-      "author": "odilonmarcenaro",
-      "source": "https://freesound.org/people/odilonmarcenaro/sounds/121949/",
-      "download": "https://cdn.freesound.org/previews/121/121949_1708550-hq.mp3",
+      "title": "Pig Grunt",
+      "author": "qubodup",
+      "source": "https://freesound.org/people/qubodup/sounds/442907/",
+      "download": "https://cdn.freesound.org/previews/442/442907_71257-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
-      "originalSha256": "67ebaa0bc3ccc35e66bee17bc0a60015cd34965b937fefc86d7dd5f6221b136a"
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
+      "originalSha256": "67a440bc20d248aa0c695170d20741b0962bef4b151c3c9ec498e02ef530edd3"
     }
   },
   {
@@ -128,6 +158,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/duck.png",
     "audio": "assets/audio/duck.mp3",
     "duration": 6.4,
+    "loudness": {
+      "integratedLufs": -19.9,
+      "truePeakDbtp": -5.0,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Duck Quack",
       "author": "gibarroule",
@@ -135,7 +170,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/365/365133_6659813-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "599aab0d8a1be1214d2057cce21c03f79c3bc58ec0f106fe40a8d5b97fa32370"
     }
   },
@@ -147,16 +182,21 @@ globalThis.SOUND_CATALOG = [
     "caption": "꼬끼오! 아침을 알려요.",
     "image": "assets/images/rooster.png",
     "audio": "assets/audio/rooster.mp3",
-    "duration": 2.6,
+    "duration": 2.5,
+    "loudness": {
+      "integratedLufs": -20.4,
+      "truePeakDbtp": -7.5,
+      "sourceChannel": 1
+    },
     "credit": {
-      "title": "Rooster, Crowing, A.wav",
-      "author": "InspectorJ",
-      "source": "https://freesound.org/people/InspectorJ/sounds/384188/",
-      "download": "https://cdn.freesound.org/previews/384/384188_5121236-hq.mp3",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
-      "originalSha256": "4fc3c0d655995e8936c2cd49bffd2372aa3712ab9f749aa16c859bf5586ae921"
+      "title": "Rooster Crowing_27112016 [Processed]",
+      "author": "cabled_mess",
+      "source": "https://freesound.org/people/cabled_mess/sounds/391313/",
+      "download": "https://cdn.freesound.org/previews/391/391313_5450487-hq.mp3",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
+      "originalSha256": "01dec6c4c9fc699b2400cb77feec096a6f4238fe3db0a45ab923a008b377f320"
     }
   },
   {
@@ -168,6 +208,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/lion.png",
     "audio": "assets/audio/lion.mp3",
     "duration": 15.0,
+    "loudness": {
+      "integratedLufs": -19.9,
+      "truePeakDbtp": -7.3,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Lion roaring.mp3",
       "author": "Bidone",
@@ -175,7 +220,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/69/69572_706955-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "1b6e4260bad31e3c690974cd61679c535bb29c9e42502675a51edea08c9d85c2"
     }
   },
@@ -188,6 +233,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/elephant.png",
     "audio": "assets/audio/elephant.mp3",
     "duration": 7.8,
+    "loudness": {
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -5.7,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Elephant sound",
       "author": "ikbenraar",
@@ -195,7 +245,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/819/819668_754558-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "35377ebab5e773539e089b93dbcd1cfd7693939040357c02eb0710cb4cd84d5a"
     }
   },
@@ -208,6 +258,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/car.png",
     "audio": "assets/audio/car.mp3",
     "duration": 15.0,
+    "loudness": {
+      "integratedLufs": -20.3,
+      "truePeakDbtp": -8.1,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Car Starting and Accelerating",
       "author": "jackthemurray",
@@ -215,7 +270,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/433/433584_5618682-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "b5968ab90cf9d3a55be298fbd8ac8634b29823692f174d5202a4c9a42c32202b"
     }
   },
@@ -228,6 +283,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/fire-engine.png",
     "audio": "assets/audio/fire-engine.mp3",
     "duration": 3.5,
+    "loudness": {
+      "integratedLufs": -20.4,
+      "truePeakDbtp": -8.2,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "German fire engine",
       "author": "Breviceps",
@@ -235,7 +295,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/465/465700_9159316-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "7a41fe757e41ac49f169b770a53622757d52a73fdb0acd18f34e0e9110d6265d"
     }
   },
@@ -248,6 +308,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/airplane.png",
     "audio": "assets/audio/airplane.mp3",
     "duration": 15.0,
+    "loudness": {
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -7.2,
+      "sourceChannel": 2
+    },
     "credit": {
       "title": "Airplane, Boeing, Flyby, Right to Left, A.wav",
       "author": "InspectorJ",
@@ -255,7 +320,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/428/428086_5121236-hq.mp3",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "5e272784db02d8313c3b256ba9c9676562e6337b9df9bb676456104a35d54d69"
     }
   },
@@ -268,6 +333,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/train.png",
     "audio": "assets/audio/train.mp3",
     "duration": 1.6,
+    "loudness": {
+      "integratedLufs": -20.4,
+      "truePeakDbtp": -5.3,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Cargo train horn at midnight",
       "author": "sgo.75",
@@ -275,7 +345,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/845/845065_18447435-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "719582cf834b6dc9a8f135f4f1179b790dbfc771fab4c1fc600d20a9c53704ab"
     }
   },
@@ -288,6 +358,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/ambulance.png",
     "audio": "assets/audio/ambulance.mp3",
     "duration": 15.0,
+    "loudness": {
+      "integratedLufs": -20.1,
+      "truePeakDbtp": -10.7,
+      "sourceChannel": 2
+    },
     "credit": {
       "title": "Ambulance Siren",
       "author": "LanDub",
@@ -295,7 +370,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/184/184623_3296721-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "1237ac8b0d3e522e7db2881f2ac33b08df2787703bf43f3d52919264a4c0f524"
     }
   },
@@ -307,7 +382,12 @@ globalThis.SOUND_CATALOG = [
     "caption": "사이렌을 울리며 출동해요.",
     "image": "assets/images/police-car.png",
     "audio": "assets/audio/police-car.mp3",
-    "duration": 14.9,
+    "duration": 15.0,
+    "loudness": {
+      "integratedLufs": -20.1,
+      "truePeakDbtp": -11.5,
+      "sourceChannel": 2
+    },
     "credit": {
       "title": "MISC_Police_Siren_Wailer_Static_001.wav",
       "author": "conleec",
@@ -315,7 +395,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/159/159753_221578-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "c6d85270855be4be1f2271288d4058318fe257fb2852b9640b76d55efe7f2715"
     }
   },
@@ -328,6 +408,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/motorcycle.png",
     "audio": "assets/audio/motorcycle.mp3",
     "duration": 5.3,
+    "loudness": {
+      "integratedLufs": -20.1,
+      "truePeakDbtp": -7.3,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Motorcycle Start Engine.wav",
       "author": "spenceomatic",
@@ -335,7 +420,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/119/119774_2123118-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "956d8f17866391c4b6c28d4a18644a3c183c57d31bde8aa4588aa96e4e6d87e7"
     }
   },
@@ -348,6 +433,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/helicopter.png",
     "audio": "assets/audio/helicopter.mp3",
     "duration": 5.8,
+    "loudness": {
+      "integratedLufs": -20.4,
+      "truePeakDbtp": -9.7,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Helicopter Loop.flac",
       "author": "qubodup",
@@ -355,7 +445,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/187/187678_71257-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "2bd9fed584b32f6ac04846faaa6bc60333b54ad4c51f341deb5e19b6629e2deb"
     }
   },
@@ -368,6 +458,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/bus.png",
     "audio": "assets/audio/bus.mp3",
     "duration": 15.0,
+    "loudness": {
+      "integratedLufs": -20.4,
+      "truePeakDbtp": -6.1,
+      "sourceChannel": 2
+    },
     "credit": {
       "title": "Bus Engine Idling",
       "author": "bikesnbassboi",
@@ -375,7 +470,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/540/540398_11267296-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "4f4b46ea7642ce7e82022f9c8d8cce02004707d0bb9446e0a5609ecc7319d59c"
     }
   },
@@ -388,6 +483,11 @@ globalThis.SOUND_CATALOG = [
     "image": "assets/images/ship.png",
     "audio": "assets/audio/ship.mp3",
     "duration": 6.0,
+    "loudness": {
+      "integratedLufs": -20.2,
+      "truePeakDbtp": -8.4,
+      "sourceChannel": 1
+    },
     "credit": {
       "title": "Ship Horn - Fog Horn - Cruise Ship Grand Princess",
       "author": "coalcon",
@@ -395,7 +495,7 @@ globalThis.SOUND_CATALOG = [
       "download": "https://cdn.freesound.org/previews/636/636075_3320549-hq.mp3",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "changes": "Downloaded the public high-quality MP3 preview; converted to mono MP3, volume normalized and limited to the first 15 seconds.",
+      "changes": "Downloaded the public high-quality MP3 preview; first 15 seconds maximum, selected the strongest source channel, padded clips shorter than one second, two-pass normalization to -20 LUFS, peak limiting and mono MP3 conversion. Loudness verified and corrected after MP3 export.",
       "originalSha256": "c33896eb9e4fad64d5f750483f1743362747ffc79e44c00ec8c730482ee35b83"
     }
   }

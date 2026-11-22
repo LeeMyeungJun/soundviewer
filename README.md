@@ -33,7 +33,7 @@ The service worker handles byte-range responses for cached MP3s, including Safar
 ## Media and updates
 
 - `assets/images/*.png`: generated illustrations. Prompt set: `assets/image-prompts.json`.
-- `assets/audio/*.mp3`: public high-quality MP3 previews downloaded from Freesound, converted to mono MP3, volume normalized and limited to the first 15 seconds.
+- `assets/audio/*.mp3`: public high-quality MP3 previews downloaded from Freesound. The first 15 seconds are converted to mono using the strongest original channel to prevent stereo phase cancellation. Clips under one second are padded with silence. Two-pass loudness matching, compression where needed, and peak limiting are followed by measurements of the decoded MP3. Exports must measure -20 LUFS ±0.5 and at most -2.5 dBTP.
 - `catalog.js`: item names, categories, paths, durations, source URLs, authors, licenses, and original file hashes.
 - `credits.html`: visible sound attribution and license links. Modified audio retains its source license. Vehicle sounds differ by region and model.
 - `tools/download_audio.py`: reproduce the sound downloads and catalog (requires Python and FFmpeg on PATH). It respects the source host's rate-limit interval.
@@ -44,6 +44,7 @@ When changing files or adding items, increment `VERSION` in `sw.js`. The next on
 
 ```powershell
 node --test tests/offline.test.cjs
+python -m unittest discover -s tests -p test_audio.py
 ```
 
 These checks exercise cached byte ranges, cache completion/retry behavior, and repository-relative paths. Actual physical iOS and Android verification remains necessary before claiming device compatibility.

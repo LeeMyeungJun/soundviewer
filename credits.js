@@ -17,7 +17,7 @@ for (const item of globalThis.SOUND_CATALOG) {
     links.append(license);
   } else links.append(item.credit.license);
   const changes = document.createElement("p");
-  changes.textContent = "변경 사항: Freesound 공개 고음질 MP3 미리듣기 파일 다운로드, 모노 MP3 변환 및 음량 조정, 최대 앞 15초 사용. 가공된 음원에도 위 라이선스를 적용합니다.";
+  changes.textContent = "변경 사항: Freesound 공개 고음질 MP3 미리듣기 파일 다운로드, 원본의 한 채널 선택, 최대 앞 15초 사용(1초 미만은 무음 추가), 음량·피크 조정 및 모노 MP3 변환. 가공된 음원에도 위 라이선스를 적용합니다.";
   section.append(heading, author, links, changes);
   document.getElementById("credits").append(section);
 }

@@ -1,7 +1,7 @@
 importScripts("./catalog.js");
 
 // Bump this version whenever application files, catalog, or media change.
-const VERSION = "v2";
+const VERSION = "v3";
 const PREFIX = `soundviewer:${self.registration.scope}:`;
 const CACHE = PREFIX + VERSION;
 const SHELL = ["./", "index.html", "styles.css", "app.js", "catalog.js", "credits.html", "credits.js", "assets/icon.svg"];
@@ -13,7 +13,7 @@ let caching;
 self.addEventListener("install", (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
-    await cache.addAll(SHELL.map(absolute));
+    await cache.addAll(SHELL.map((file) => new Request(absolute(file), { cache: "reload" })));
     await self.skipWaiting();
   })());
 });
